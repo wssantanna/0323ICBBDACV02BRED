@@ -1,33 +1,17 @@
 public class Conta {
 
-    private double saldo = 0.0;
-
-    public String apresentarSaldoAtual() {
-        String saldoAtual = "R$" + " " + Double.toString(saldo);
-        
-        return saldoAtual;
+    private double saldoDisponivel = 0;
+    
+    public double getSaldoDisponivel() {
+        return saldoDisponivel;
     }
-
-    public String depositar(double valorDoDeposito) {
-        double saldoMaisDeposito = saldo += valorDoDeposito;
-        String saldoAtual = "R$" + " " + Double.toString(saldoMaisDeposito);
-        
-        return saldoAtual;
+    
+    public void depositar(double valor) {
+        saldoDisponivel += valor;
     }
-
-    public String sacar(double valorDoSaque) {
-        boolean tenhoSaldoSuficiente = saldo >= valorDoSaque;
-
-        if(tenhoSaldoSuficiente) {
-            double saldoMenosSaque = saldo -= valorDoSaque;
-            String saldoAtual = "R$" + " " + Double.toString(saldoMenosSaque);
-            
-            return saldoAtual;
-        }
-        else {
-            String mensagemDeError = "Saldo insuficiente!";
-            return mensagemDeError;
-        }
+    
+    public void sacar(double valor) {
+        saldoDisponivel -= valor;
     }
     
 }
