@@ -1,0 +1,13 @@
+public class Triangulo extends Poligono {
+    
+    // 1) Implemente get/set dos atributos:
+    // double base, double altura...
+
+    // 2) Defina os atribuitos necessários para iniciar a classe:
+    // double base, double altura...
+    public Triangulo() {
+
+    }
+
+    // 3) Sobrescreva o função getArea()
+}
