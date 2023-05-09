@@ -1,12 +1,15 @@
 public class Programa {
+    public static void main(String[] args) {
+        Fisica pessoa = new Fisica("Willian");
+        System.out.println(pessoa.saudar());
 
-    public static void main(String[] args) {        
-        Cliente cliente = new Cliente();
-        Fisica fisica = new Fisica();
-        Juridica juridica = new Juridica();
-    
-        System.out.println(cliente.saudar());
-        System.out.println(fisica.saudar());
-        System.out.println(juridica.saudar());
-    }
+        Juridica empresa = new Juridica();
+        System.out.println(empresa.saudar());
+
+        Cliente hibrido = new Cliente();
+        System.out.println(hibrido.saudar());
+
+        Administrador administrador = new Administrador();
+        System.out.println(administrador.saudar());
+    }    
 }

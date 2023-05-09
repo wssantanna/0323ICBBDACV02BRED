@@ -1,5 +1,6 @@
 public class Juridica extends Cliente {
+    // Sobrescrevendo a função existente
     public String saudar() {
-        return "Olá empresa";
+        return "Bem-vindo";
     }
 }
